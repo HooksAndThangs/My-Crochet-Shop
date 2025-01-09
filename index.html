@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crochet Shop</title>
+    <title>Home - Crochet Shop</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,24 +17,15 @@
             padding: 20px;
             text-align: center;
         }
-        nav {
-            text-align: center;
-        }
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #5c4033;
             font-weight: bold;
-            cursor: pointer;
         }
         section {
             padding: 20px;
-        }
-        .hidden {
-            display: none;
-        }
-        .active {
-            display: block;
+            text-align: center;
         }
         footer {
             text-align: center;
@@ -43,59 +34,22 @@
             color: #5c4033;
         }
     </style>
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                section.classList.add('hidden');
-            });
-            document.getElementById(sectionId).classList.remove('hidden');
-        }
-    </script>
 </head>
 <body>
     <header>
         <h1>Welcome to My Crochet Shop!</h1>
         <nav>
-            <a onclick="showSection('home')">Home</a>
-            <a onclick="showSection('about')">About</a>
-            <a onclick="showSection('gallery')">Gallery</a>
-            <a onclick="showSection('shop')">Shop</a>
-            <a onclick="showSection('contact')">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <section id="home" class="active">
-        <h2>Welcome</h2>
-        <p>Discover handmade, unique crochet items perfect for gifts or treating yourself!</p>
-    </section>
-
-    <section id="about" class="hidden">
+    <section>
         <h2>About Us</h2>
-        <p>Learn about our passion for crochet and creating beautiful handmade items.</p>
-    </section>
-
-    <section id="gallery" class="hidden">
-        <h2>Gallery</h2>
-        <p>Check out some of our latest crochet creations!</p>
-        <!-- Add gallery images here -->
-    </section>
-
-    <section id="shop" class="hidden">
-        <h2>Shop</h2>
-        <p>Browse our collection of crochet items and add your favorites to the cart!</p>
-        <!-- Add product listings here -->
-    </section>
-
-    <section id="contact" class="hidden">
-        <h2>Contact Us</h2>
-        <p>Have a question or special request? Send us a message!</p>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <p>Discover handmade, unique crochet items perfect for gifts or treating yourself!</p>
     </section>
 
     <footer>
