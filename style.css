@@ -1,188 +1,50 @@
-<link rel="stylesheet" href="css/styles.css">
-/* Basic reset */
-* {
+/* This is the CSS file for styling your website */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
+    background-color: #f4f4f9;
     color: #333;
-    line-height: 1.6;
-    padding-top: 50px; /* For sticky header */
 }
 
 header {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    padding: 15px 0;
+    background: #35495e;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
-header h1 {
-    font-size: 2.5em;
-    font-weight: bold;
+header nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-nav {
-    margin-top: 10px;
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-nav a {
-    margin: 0 20px;
-    color: white;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 1.1em;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styles */
 section {
-    margin: 40px auto;
-    max-width: 1000px;
+    margin: 20px;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-bottom: 40px;
-}
-
-/* About Me */
-#about-me {
-    background-color: #ffffff;
-}
-
-#about-me h2 {
-    font-size: 2em;
-    color: #4CAF50;
-    margin-bottom: 15px;
-}
-
-#about-me p {
-    font-size: 1.2em;
-    line-height: 1.8;
-}
-
-/* Gallery */
-#gallery {
-    background-color: #ffffff;
-}
-
-#gallery h2 {
-    font-size: 2em;
-    color: #4CAF50;
-    margin-bottom: 15px;
-}
-
-.image-container {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.image-container img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Shop */
-#shop {
-    background-color: #ffffff;
-}
-
-#shop h2 {
-    font-size: 2em;
-    color: #4CAF50;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-/* Contact */
-#contact {
-    background-color: #ffffff;
-}
-
-#contact h2 {
-    font-size: 2em;
-    color: #4CAF50;
-    margin-bottom: 15px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    font-size: 1em;
+    background: #fff;
     border-radius: 5px;
-    border: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-form textarea {
-    height: 150px;
-}
-
-form button {
-    padding: 10px;
-    background-color: #4CAF50; /* Green */
-    color: white;
-    border: none;
-    font-size: 1.1em;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #45a049; /* Darker green */
-}
-
-/* Footer */
 footer {
     text-align: center;
-    padding: 15px 0;
-    background-color: #333;
-    color: white;
+    padding: 10px 0;
+    background: #35495e;
+    color: #fff;
     position: fixed;
-    width: 100%;
     bottom: 0;
-    z-index: 100;
+    width: 100%;
 }
 
-footer p {
-    font-size: 1.2em;
-}
-
-/* Mobile responsiveness */
-@media screen and (max-width: 768px) {
-    nav a {
-        font-size: 1em;
-    }
-
-    .image-container {
-        flex-direction: column;
-    }
-}
